@@ -1,0 +1,23 @@
+[package]
+name = "cargo-semver-bump"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/markhaehnel/cargo-semver-bump"
+authors = ["Mark Hähnel <hello@markhaehnel.de>"]
+description = "A tool to semantically bump the version of a Rust crate"
+license = "MIT OR Apache-2.0"
+keywords = ["cargo", "semver", "ci", "automation", "check"]
+categories = ["command-line-utilities", "development-tools::cargo-plugins"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+cargo-semver-checks = { version = "0.26.0", default-features = false }
+clap = { version = "4.4.11", features = ["derive"] }
+env_logger = { version = "0.10.1" }
+git-cliff = { version = "1.4.0", default-features = false }
+git-cliff-core = "1.4.0"
+log = { version = "0.4.20" }
+semver = { version = "1.0.20" }
+toml_edit = { version = "0.21.0", default-features = false }
