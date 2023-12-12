@@ -21,6 +21,14 @@ cargo-semver-bump is a tool to automatically bump the version of your Rust crate
 cargo install cargo-semver-bump --locked
 ```
 
+### Arch Linux
+
+cargo-semver-bump can be installed from the [AUR](https://aur.archlinux.org/packages?O=0&SeB=nd&K=cargo-semver-bump&outdated=&SB=p&SO=d&PP=50&submit=Go) using an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers). For example:
+
+```bash
+paru -S cargo-semver-bump
+```
+
 ## Usage
 
 Just run the following command in your project directory:
